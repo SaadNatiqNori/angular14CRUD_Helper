@@ -1,0 +1,53 @@
+@import "~swiper/css";
+@import "~swiper/css/effect-cards";
+
+.swiper {
+  width: 90%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
+.myHomeSliderImage{
+  height: 395px;
+  object-fit: cover;
+  border-radius: 7px;
+  border: 1px solid white;
+}
+
+::ng-deep{
+  .swiper-button-prev {
+    background-color: #98ca3c;
+    color: white;
+    font-weight: bold;
+    border-radius: 14px;
+    border: 1px solid white;
+    height: 55px;
+    left: -13px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+  }
+  .swiper-button-prev:after {
+    font-size: 15px;
+  }
+  .swiper-button-next {
+    background-color: #98ca3c;
+    color: white;
+    font-weight: bold;
+    border-radius: 14px;
+    border: 1px solid white;
+    height: 55px;
+    right: -13px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+  }
+  .swiper-button-next:after {
+    font-size: 15px;
+  }
+}
+

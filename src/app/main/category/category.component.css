@@ -1,0 +1,32 @@
+.card {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  /* background: linear-gradient(360deg, rgb(71, 71, 71), rgb(241, 240, 240)); */
+  border: none;
+  z-index: 3;
+}
+.cardLayer {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  /* background: rgba(0, 0, 0, 0.329); */
+  z-index: 5;
+  border-radius: 4px;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+}
+.card img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 0;
+  z-index: 10;
+  transition: 0.3s ease-in-out;
+}
+.card:hover .cardLayer {
+  transform: rotate(45deg);
+}
+.card:hover img {
+  width: 110px;
+}

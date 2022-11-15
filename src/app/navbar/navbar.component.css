@@ -1,0 +1,132 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  z-index: 500;
+  width: 100%;
+  left: 0;
+}
+.mySearch {
+  width: 150px;
+  border: none;
+  background-color: #98ca3c;
+  color: white;
+  border-radius: 45px;
+}
+.mySearch::placeholder {
+  color: white;
+}
+.form-control:focus {
+  outline: none;
+  border: none;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.backSearch {
+  width: 100px;
+  background-color: #98ca3c;
+  border-radius: 45px;
+}
+
+.mySearch:hover {
+  background-color: white;
+  color: #98ca3c;
+  border: 3px solid #98ca3c;
+  transition: all 0.5s ease-in-out;
+}
+.backSearch:hover .mySearch {
+  background-color: white;
+  color: #98ca3c;
+  border: 3px solid #98ca3c;
+  transition: all 0.5s ease-in-out;
+}
+.mySearch:hover::placeholde {
+  color: #98ca3c !important;
+  transition: all 0.5s ease-in-out;
+}
+
+.backSearch:hover {
+  width: 900px;
+  transition: all 0.5s ease-in-out;
+}
+.bx {
+  color: #5b5d5f;
+}
+.userIcon {
+  padding: 10px;
+  border-radius: 50%;
+  border: 1px solid #7d8184;
+}
+
+.bx:hover {
+  color: #98ca3c;
+  transition: all 0.2s ease-in-out;
+}
+
+.myStore:hover {
+  color: #98ca3c;
+  transition: all 0.2s ease-in-out;
+}
+.myStore:hover i {
+  color: #98ca3c;
+  transition: all 0.2s ease-in-out;
+}
+.myLogin:hover {
+  color: #98ca3c;
+  transition: all 0.2s ease-in-out;
+}
+.myLogin:hover i {
+  background-color: #98ca3c;
+  color: white;
+  border-color: #98ca3c;
+  transition: all 0.2s ease-in-out;
+}
+.dropdown-toggle::after {
+  display: block;
+  content: "";
+  border-top: 0.3em solid;
+  border-right: 0.3em solid transparent;
+  border-bottom: 0rem;
+  border-left: 0.3em solid transparent;
+  margin-top: 0px;
+  margin-bottom: 3px;
+  margin-right: 5px;
+  margin-left: 6px;
+}
+.myDropDown {
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 0;
+  padding-top: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(219, 216, 216, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  border-color: #eee;
+  color: rgb(109, 107, 107);
+  width: fit-content !important;
+}
+.myDropDown:hover {
+  background: #98ca3c;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+.myDropDown:focus {
+  box-shadow: none;
+  background: #98ca3c;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+.myOpenedDd {
+  width: fit-content;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.2px);
+  -webkit-backdrop-filter: blur(3.2px);
+  border: 1px solid rgba(255, 255, 255, 0.19);
+}
+.myOpenedDd li a {
+  color: #98ca3c !important;
+}

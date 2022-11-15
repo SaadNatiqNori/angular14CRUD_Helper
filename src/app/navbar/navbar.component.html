@@ -1,28 +1,40 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow">
   <div class="container-fluid">
-    <a class="navbar-brand" routerLink="/">Navbar</a>
+    <h4 class="" href="#"><img src="https://zibox.io/assets/images/logo_ZiBox.png" alt="zibox-img" width="40"> Zibox<sub><small>.iq</small></sub></h4>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <!-- <li class="nav-item">
-          <a class="nav-link" routerLink="/">Link</a>
-        </li> -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Users
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" routerLink="/users">List</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </li>
+        <li class="nav-item">
+          <div class="backSearch">
+            <!-- <i class='bx bx-search'></i> -->
+            <input type="text" class="mySearch form-control" placeholder="Search...">
+          </div>
         </li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
+      <form class="d-flex align-items-center">
+        <span class="mx-2 d-flex align-items-start myStore"><i class='bx bxs-store bx-sm'></i>&nbsp;<b>Sell on ZiBox</b></span>
+        <span class="mx-2"><i class='bx bx-cart bx-sm'></i></span>
+        <span class="mx-2"><i class='bx bx-heart bx-sm'></i></span>
+        <div class="dropdown mx-2">
+          <a class="btn btn-secondary myDropDown dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <small><b>EN</b></small>
+          </a>
+
+          <ul class="dropdown-menu dropdown-menu-end myOpenedDd">
+            <li><a class="dropdown-item" href="#"><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/255px-Flag_of_the_United_Kingdom.svg.png" width="25" alt="english" style="border-radius: 2px;"> English</a></li>
+            <li><a class="dropdown-item" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Flag_of_Iraq.svg/255px-Flag_of_Iraq.svg.png" width="25" alt="arabic" style="border-radius: 2px;"> العربیة</a></li>
+            <li><a class="dropdown-item" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Flag_of_Kurdistan.svg/255px-Flag_of_Kurdistan.svg.png" width="25" alt="kurdish" style="border-radius: 2px;"> كوردی</a></li>
+            <li><a class="dropdown-item" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Flag_of_Kurdistan.svg/255px-Flag_of_Kurdistan.svg.png" width="25" alt="kurdish" style="border-radius: 2px;"> Kurdi</a></li>
+          </ul>
+        </div>
+        <span class="mx-2 myLogin"><i class='bx bxs-user userIcon '></i>&nbsp;&nbsp;Login</span>
       </form>
     </div>
   </div>

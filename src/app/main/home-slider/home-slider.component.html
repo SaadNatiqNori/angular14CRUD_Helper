@@ -1,0 +1,23 @@
+<swiper
+ [effect]="'cards'"
+ [grabCursor]="true"
+ [autoplay]="{ delay: 2500, disableOnInteraction: false }"
+ [keyboard]="{
+      enabled: true
+    }"
+    [navigation]="true"
+    [loop]="true"
+ class="mySwiper">
+  <ng-template swiperSlide class="shadow">
+    <img src="https://i.ytimg.com/vi/fT1dE4-WryQ/maxresdefault.jpg" class="myHomeSliderImage" width="100%" alt="img1">
+  </ng-template>
+  <ng-template swiperSlide class="shadow">
+    <img src="https://dev-zimarketplace.s3.eu-central-1.amazonaws.com/products/85/EWOH3PN5FG.webp" class="myHomeSliderImage" width="100%" alt="img1">
+  </ng-template>
+  <ng-template swiperSlide class="shadow">
+    <img src="https://dev-zimarketplace.s3.eu-central-1.amazonaws.com/products/86/3NVivyda9l.webp" class="myHomeSliderImage" width="100%" alt="img1">
+  </ng-template>
+  <ng-template swiperSlide class="shadow">
+    <img src="https://dev-zimarketplace.s3.eu-central-1.amazonaws.com/products/75/4UqZ1L6PC0.webp" class="myHomeSliderImage" width="100%" alt="img1">
+  </ng-template>
+</swiper>

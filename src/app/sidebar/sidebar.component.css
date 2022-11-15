@@ -1,0 +1,22 @@
+.openSidebar {
+  width: fit-content;
+  padding: 5px;
+  margin: 0;
+  position: absolute;
+  top: -3px;
+  right: -25px;
+  z-index: 540;
+  font-size: 25px;
+  color: #98ca3c;
+}
+#header-toggle {
+  padding: 5px;
+  border-radius: 50%;
+  border: 2px solid #98ca3c;
+  background-color: white;
+}
+#header-toggle:hover {
+  background-color: #98ca3c;
+  transition: all 0.2s ease-in-out;
+  color: white;
+}

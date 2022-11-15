@@ -1,0 +1,22 @@
+.text-primary {
+  color: #608026 !important;
+}
+.text-zibox {
+  color: #98ca3c;
+}
+.bg-white {
+  background-color: #fff !important;
+}
+.radius-10 {
+  border-radius: 10px;
+  border: none;
+}
+.serviceCard {
+  min-height: 110px;
+  background-color: white;
+}
+.serviceCard:hover {
+  background-color: #608026;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}

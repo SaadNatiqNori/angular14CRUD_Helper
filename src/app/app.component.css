@@ -1,3 +1,11 @@
-.container {
-  min-height: 100vh !important;
+.my-content {
+  margin-top: 5rem !important;
+  margin-left: 5rem;
+  margin-right: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .my-content {
+    margin-left: 0px !important;
+  }
 }

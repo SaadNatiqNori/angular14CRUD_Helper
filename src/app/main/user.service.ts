@@ -27,6 +27,5 @@ export class UserService {
       return user.id === id;
     });
     return result;
-
   };
 }

@@ -9,6 +9,11 @@ import { MainComponent } from './main/main.component';
 import { UserComponent } from './main/user/user.component';
 import { ShowComponent } from './main/user/show/show.component';
 import { UserService } from './main/user.service';
+import { LazyLoadImageModule, LAZYLOAD_IMAGE_HOOKS, ScrollHooks } from 'ng-lazyload-image';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { SwiperModule } from 'swiper/angular';
+import { HomeSliderComponent } from './main/home-slider/home-slider.component';
+import { CategoryComponent } from './main/category/category.component';
 
 @NgModule({
   declarations: [
@@ -17,13 +22,18 @@ import { UserService } from './main/user.service';
     FooterComponent,
     MainComponent,
     UserComponent,
-    ShowComponent
+    ShowComponent,
+    SidebarComponent,
+    HomeSliderComponent,
+    CategoryComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    LazyLoadImageModule,
+    SwiperModule,
   ],
-  providers: [UserService],
+  providers: [UserService, { provide: LAZYLOAD_IMAGE_HOOKS, useClass: ScrollHooks }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
